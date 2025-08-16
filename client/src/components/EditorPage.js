@@ -114,7 +114,7 @@ function EditorPage() {
   const runCode = async () => {
     setIsCompiling(true);
     try {
-      const response = await axios.post("https://codecast-backend-5ui2.onrender.com/compile", {
+      const response = await axios.post("https://codecast-backend-5ui2.onrender.com", {
         code: codeRef.current,
         language: selectedLanguage,
       });
